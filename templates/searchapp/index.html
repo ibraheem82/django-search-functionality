@@ -1,0 +1,26 @@
+{% extends "partials/base.html" %}
+{% block content %}
+<table class="table table-success">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Age</th>
+      <th scope="col">Nationality</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for datas in biodatas %}
+    <tr>
+      <td>{{datas.first_name}}</td>
+      <td>{{datas.last_name}}</td>
+      <td>{{datas.age}}</td>
+      <td>{{datas.nationality}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+{% endblock content %}
